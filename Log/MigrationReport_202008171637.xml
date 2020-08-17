@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Migration>
+    <ActiveEcuC>
+        <ModuleConfigurations>
+            <ModuleConfiguration shortname="ComM">
+                <SubContainers>
+                    <Container shortname="ComMConfigSet">
+                        <SubContainers>
+                            <Container shortname="CN_CAN00_a2373004">
+<OldName>CAN00_f26020e5</OldName>
+                            </Container>
+                            <Container shortname="CN_CAN00_68d36c54">
+<OldName>USR_CHNL_f276589c</OldName>
+                            </Container>
+                            <Container shortname="CN_CAN00_a2373004">
+<SubContainers>
+    <Container shortname="CN_CAN00_6854f362">
+        <OldName>CHNL_f276589c</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="PduR">
+                <SubContainers>
+                    <Container shortname="PduRRoutingTables">
+                        <SubContainers>
+                            <Container shortname="PduRRoutingTable">
+<SubContainers>
+    <Container shortname="LightSwitch_oCAN00_8d4de26e_Rx">
+        <SubContainers>
+            <Container shortname="LightSwitch_oCAN00_8d4de26e_Rx_d73f9532_Rx">
+                <OldName>DST_Can_PT_LightSwitch_0fb271d2</OldName>
+            </Container>
+            <Container shortname="PduRSrcPdu_d73f9532">
+                <OldName>SRC_Can_PT_LightSwitch_0fb271d2</OldName>
+            </Container>
+        </SubContainers>
+    </Container>
+    <Container shortname="LightSwitch_oCAN00_8d4de26e_Rx">
+        <OldName>Can_PT_LightSwitch_0fb271d2</OldName>
+    </Container>
+    <Container shortname="LightCtrl_oCAN00_2e88b3f5_Tx">
+        <OldName>Can_PT_LightCtrl_0fb271d2</OldName>
+    </Container>
+    <Container shortname="LightCtrl_oCAN00_2e88b3f5_Tx">
+        <SubContainers>
+            <Container shortname="LightCtrl_oCAN00_0afee19e_Tx">
+                <OldName>DST_Can_PT_LightCtrl_0fb271d2</OldName>
+            </Container>
+            <Container shortname="PduRSrcPdu_30bff602">
+                <OldName>SRC_Can_PT_LightCtrl_0fb271d2</OldName>
+            </Container>
+        </SubContainers>
+    </Container>
+</SubContainers>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="Can">
+                <SubContainers>
+                    <Container shortname="CanConfigSet">
+                        <SubContainers>
+                            <Container shortname="CN_CAN00_a2373004_Tx">
+<OldName>CN_CAN00_e8c1d35b_Tx</OldName>
+                            </Container>
+                            <Container shortname="CT_CAN00_6199f384">
+<OldName>CT_CAN00_e8c1d35b</OldName>
+                            </Container>
+                            <Container shortname="CN_CAN00_193527e3_Rx">
+<OldName>CN_CAN00_e8c1d35b_Rx_Std</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="Com">
+                <SubContainers>
+                    <Container shortname="ComConfig">
+                        <SubContainers>
+                            <Container shortname="BFC_oCAN00_Tx_5d56b2ca">
+<OldName>BFC_oCAN00_Tx_fcef2243</OldName>
+                            </Container>
+                            <Container shortname="HeadLight_oLightCtrl_oCAN00_3d3756da_Tx">
+<OldName>HeadLight_2e88b3f5</OldName>
+                            </Container>
+                            <Container shortname="LightSwitch_oCAN00_d3b6d56e_Rx">
+<OldName>LightSwitch_oCAN00_3abd61be</OldName>
+                            </Container>
+                            <Container shortname="LightCtrl_oCAN00_2e88b3f5_Tx">
+<OldName>LightCtrl_oCAN00_3abd61be</OldName>
+                            </Container>
+                            <Container shortname="LightSwitch_oLightSwitch_oCAN00_b775c021_Rx">
+<OldName>LightSwitch_d3b6d56e</OldName>
+                            </Container>
+                            <Container shortname="BFC_oCAN00_Rx_0b0c154c">
+<OldName>BFC_oCAN00_Rx_fcef2243</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="EcuC">
+                <SubContainers>
+                    <Container shortname="EcucPduCollection">
+                        <SubContainers>
+                            <Container shortname="BFC_f09b214a_Rx">
+<OldName>BFC_NmRxPdu_5faa4e95</OldName>
+                            </Container>
+                            <Container shortname="LightCtrl_oCAN00_0afee19e_Tx">
+<OldName>PT_LightCtrl_PP_LightCtrl_Tx_0fb271d2_a2373004</OldName>
+                            </Container>
+                            <Container shortname="LightSwitch_oCAN00_d3b6d56e_Rx">
+<OldName>PT_LightSwitch_PP_LightSwitch_Rx_0fb271d2_a2373004</OldName>
+                            </Container>
+                            <Container shortname="LightSwitch_oCAN00_8d4de26e_Rx">
+<OldName>PT_LightSwitch_PP_LightSwitch_Rx_0fb271d2_a2373004</OldName>
+                            </Container>
+                            <Container shortname="NmBFC_oCAN00_4874935e_Tx">
+<OldName>NmBFC_36c93de6</OldName>
+                            </Container>
+                            <Container shortname="LightCtrl_oCAN00_2e88b3f5_Tx">
+<OldName>PT_LightCtrl_PP_LightCtrl_Tx_0fb271d2_a2373004</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="CanIf">
+                <SubContainers>
+                    <Container shortname="CanIfInitCfg">
+                        <SubContainers>
+                            <Container shortname="BFC_665f3a14_Rx">
+<OldName>BFC_5faa4e95_NMCanIDRange</OldName>
+                            </Container>
+                            <Container shortname="CHNL_0fb271d2">
+<OldName>CanIfBufferCfg_0fb271d2</OldName>
+                            </Container>
+                            <Container shortname="BFC_665f3a14_Rx">
+<SubContainers>
+    <Container shortname="CHNL_6a942da5">
+        <OldName>CHNL</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                            <Container shortname="CanIfInitHohCfg">
+<SubContainers>
+    <Container shortname="CN_CAN00_a2373004_Tx">
+        <OldName>CN_CAN00_e8c1d35b_Tx</OldName>
+    </Container>
+    <Container shortname="CN_CAN00_193527e3_Rx">
+        <OldName>CN_CAN00_e8c1d35b_Rx_Std</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                            <Container shortname="LightCtrl_oCAN00_d9f1a7da_Tx">
+<OldName>LightCtrl_oCAN00_Tx_3abd61be</OldName>
+                            </Container>
+                            <Container shortname="LightSwitch_oCAN00_042dae16_Rx">
+<OldName>LightSwitch_oCAN00_Rx_3abd61be</OldName>
+                            </Container>
+                            <Container shortname="NmBFC_oCAN00_feb4f615_Tx">
+<OldName>NmBFC_oCAN00_Tx_3abd61be</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                    <Container shortname="CanIfCtrlDrvCfg_7d254554">
+                        <OldName>Can</OldName>
+                    </Container>
+                    <Container shortname="CanIfCtrlDrvCfg_7d254554">
+                        <SubContainers>
+                            <Container shortname="CT_CAN00_6199f384">
+<OldName>CT_CAN00_e8c1d35b</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="CanNm">
+                <SubContainers>
+                    <Container shortname="CanNmGlobalConfig">
+                        <SubContainers>
+                            <Container shortname="CAN00_CAN_5faa4e95">
+<OldName>CAN00_CAN_17d0077e</OldName>
+                            </Container>
+                            <Container shortname="CAN00_CAN_5faa4e95">
+<SubContainers>
+    <Container shortname="NmBFC_oCAN00_4874935e_Tx">
+        <OldName>NmBFC_oCAN00_TxPdu_3abd61be</OldName>
+    </Container>
+    <Container shortname="CAN00_CAN_5faa4e95_Rx">
+        <OldName>CAN00_CAN_17d0077e_RxPdu_2d241a48</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="EcuM">
+                <SubContainers>
+                    <Container shortname="EcuMConfiguration">
+                        <SubContainers>
+                            <Container shortname="EcuMCommonConfiguration">
+<SubContainers>
+    <Container shortname="CN_CAN00_a2373004">
+        <OldName>CAN00_f26020e5</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="CanSM">
+                <SubContainers>
+                    <Container shortname="CanSMConfiguration">
+                        <SubContainers>
+                            <Container shortname="CHNL_0fb271d2">
+<SubContainers>
+    <Container shortname="CT_CAN00_9bd332a1">
+        <OldName>CT_CAN00_e8c1d35b</OldName>
+    </Container>
+</SubContainers>
+                            </Container>
+                            <Container shortname="CHNL_0fb271d2">
+<OldName>CHNL_f276589c</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+            <ModuleConfiguration shortname="Nm">
+                <SubContainers>
+                    <Container shortname="CN_CAN00_a2373004">
+                        <OldName>CAN00_f26020e5</OldName>
+                    </Container>
+                    <Container shortname="CN_CAN00_a2373004">
+                        <SubContainers>
+                            <Container shortname="CAN00_CAN_5faa4e95">
+<OldName>CAN00_CAN_17d0077e</OldName>
+                            </Container>
+                        </SubContainers>
+                    </Container>
+                </SubContainers>
+            </ModuleConfiguration>
+        </ModuleConfigurations>
+    </ActiveEcuC>
+</Migration>

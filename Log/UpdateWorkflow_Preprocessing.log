@@ -1,0 +1,31 @@
+2020-08-17 - 16:37:16
+Workflow 'Input File Pre-Processing' started.
+ 16:37:16 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 16:37:16 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: D:\Microsar24\24.01.00\external\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "C:\Users\visgjo\Documents\GitHub\LightControl\CAN.dbc" -o "D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy" -r 00046 -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.36.1.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              License is invalid! Element <SLP> cannot be found.
+              
+              [info] SIP License found as D:\Microsar24\24.01.00\external\SipLicense.lic.
+              [info] Command line: D:\Microsar24\24.01.00\external\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Users\visgjo\Documents\GitHub\LightControl\CAN.dbc" -o "D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy" -r 00046 -e -v 19.
+              [info] Converting DBC file C:\Users\visgjo\Documents\GitHub\LightControl\CAN.dbc.
+              [info] Writing System Description...
+              [info] Writing 3 ECU Extracts...
+              
+              D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy.arxml.
+              D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy_BFC.arxml.
+              D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy_HLC.arxml.
+              D:\TEMP\DaVinci\Cfg-4911627\LegacyConverterResults\1597675036299-0\ConvertedLegacy_LSW.arxml.
+              Elapsed time: 0,936 seconds.
+              0 Errors.
+              0 Warnings.
+ 16:37:17 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished.
+ 16:37:17 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished.
+ 16:37:17 - Action 'Load arxml file after preprocessing' started.
+ 16:37:17 - Action 'Load arxml file after preprocessing' successfully finished.
+16:37:17 - Workflow 'Input File Pre-Processing' successfully finished.

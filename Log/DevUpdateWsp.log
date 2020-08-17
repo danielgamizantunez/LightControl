@@ -1,0 +1,21 @@
+﻿17 Aug 2020 16:38:25 - Opening workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+17 Aug 2020 16:38:26 - Loading file PlatformTypes_AR4.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+17 Aug 2020 16:38:26 - Loading file ComM_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\ComM_swc.arxml)
+17 Aug 2020 16:38:26 - Loading file Det_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\Det_swc.arxml)
+17 Aug 2020 16:38:26 - Loading file EcuM_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\EcuM_swc.arxml)
+17 Aug 2020 16:38:27 - Loading file DataTypes.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\DataTypes.arxml)
+17 Aug 2020 16:38:27 - Loading file LightControlGIT.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.arxml)
+17 Aug 2020 16:38:27 - Loading file Packages.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\Packages.arxml)
+17 Aug 2020 16:38:27 - Loading file PortInterfaces.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\PortInterfaces.arxml)
+17 Aug 2020 16:38:27 - Opened workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.
+17 Aug 2020 16:38:28 - Start import
+17 Aug 2020 16:38:28 - Importing file (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\System\SystemExtract.arxml).
+17 Aug 2020 16:38:28 - Merging imported data
+17 Aug 2020 16:38:29 - Finished import
+17 Aug 2020 16:38:29 - Saving workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+17 Aug 2020 16:38:29 - Saving file DataTypes.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\DataTypes.arxml)
+17 Aug 2020 16:38:29 - Saving file LightControlGIT.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.arxml)
+17 Aug 2020 16:38:29 - Saving file Packages.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\Packages.arxml)
+17 Aug 2020 16:38:29 - Saved workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.
+17 Aug 2020 16:38:29 - Closing workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+17 Aug 2020 16:38:29 - Closed workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.

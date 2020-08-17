@@ -1,0 +1,15 @@
+﻿17 Aug 2020 16:36:10 - Saving file AdminDataTemplates.xml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\AdminDataTemplates.xml)
+17 Aug 2020 16:36:10 - Saving file LightControlGIT.dcf (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\LightControlGIT.dcf)
+17 Aug 2020 16:36:10 - Start import
+17 Aug 2020 16:36:10 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3 (SP2)\Bin\Predefines\StandardPackages_AR4.arxml).
+17 Aug 2020 16:36:11 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3 (SP2)\Bin\Predefines\ServicePortInterfaces_4.3.1.arxml).
+17 Aug 2020 16:36:11 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3 (SP2)\Bin\Predefines\ApplicationPortInterfaces_4.3.1.arxml).
+17 Aug 2020 16:36:11 - Importing file (C:\Users\visgjo\Documents\GitHub\LightControl\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+17 Aug 2020 16:36:11 - Merging imported data
+17 Aug 2020 16:36:12 - Finished import
+17 Aug 2020 16:36:12 - Saving file ProfileSettings.xml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\ProfileSettings.xml)
+17 Aug 2020 16:36:13 - Saving file Packages.arxml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\Packages.arxml)
+17 Aug 2020 16:36:13 - Saving file DataTypes.arxml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\DataTypes.arxml)
+17 Aug 2020 16:36:13 - Saving file PortInterfaces.arxml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\PortInterfaces.arxml)
+17 Aug 2020 16:36:13 - Saving file LightControlGIT.arxml (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\ECUProjects\LightControlGIT.arxml)
+17 Aug 2020 16:36:13 - Saving file LightControlGIT.dcf (C:\Users\visgjo\Documents\GitHub\LightControl\Config\Developer\LightControlGIT.dcf)

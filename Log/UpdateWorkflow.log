@@ -1,0 +1,92 @@
+2020-08-17 - 16:37:27
+Workflow 'Update workflow.' started.
+              Using DaVinci Configurator  5.20.35 (x86_64).
+ 16:37:27 - Action 'Validate workflow environment' started.
+ 16:37:27 - Action 'Validate dpa file' started.
+ 16:37:27 - Action 'Validate dpa file' successfully finished.
+ 16:37:27 - Action 'SLP conformance check' started.
+ 16:37:27 - Action 'SLP conformance check' successfully finished.
+ 16:37:27 - Action 'Validate workflow environment' successfully finished.
+ 16:37:27 - Action 'Create copy of the Project' started.
+              Copy project 'C:\Users\visgjo\Documents\GitHub\LightControl' to 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0'...
+              Adjusting DPA file of copied project...
+ 16:37:27 - Action 'Create copy of the Project' successfully finished.
+ 16:37:27 - Action 'Close Project' started.
+ 16:37:28 - Action 'Close Project' successfully finished.
+ 16:37:33 - Action 'Prepare DaVinci Developer update data' started.
+ 16:37:33 - Action 'Prepare DaVinci Developer update data' successfully finished.
+ 16:37:33 - Action 'Prepare System Extract' started.
+ 16:37:33 - Action 'Preprocessing System Extract' started.
+ 16:37:33 - Action 'Preprocessing System Extract' successfully finished.
+ 16:37:33 - Action 'Create OEM Communication Extract' started.
+ 16:37:34 - Action 'Create OEM Communication Extract' successfully finished.
+ 16:37:34 - Action 'Prepare System Extract' successfully finished.
+ 16:37:34 - Action 'Updating the project' started.
+ 16:37:39 - Action 'Create ECU configuration' started.
+ 16:37:47 - Action 'Create ECU configuration' successfully finished.
+ 16:37:47 - Action 'Update ECU configuration' started.
+              No Package path available for module configuration: /ActiveEcuC/Com. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Mcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Rte. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/EcuM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/VTTMcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/E2EXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/VTTCntrl. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanNm. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Os. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/PduR. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/VTTEcuC. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanSM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Nm. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Can. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanIf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/ComXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Det. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/ComM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/VTTCan. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/EcuC. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/BswM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/vSet. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/SomeIpXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/VTTOs. Default /ActiveEcuC is used instead.
+ 16:37:55 - Action 'Update ECU configuration' successfully finished.
+ 16:37:55 - Action 'Updating the project' successfully finished.
+ 16:37:55 - Action 'Generate update report' started.
+ 16:38:12 - Action 'Generate update report' successfully finished.
+ 16:38:12 - Action 'Execute Solving Actions' started.
+              Executing all Preferred-Solving-Actions...
+              All Preferred-Solving-Actions done.
+              Executing update specific Preferred-Solving-Actions...
+              Update specific Preferred-Solving-Actions done.
+ 16:38:21 - Action 'Execute Solving Actions' successfully finished.
+ 16:38:21 - Action 'Update DaVinci Developer Workspace' started.
+              17 Aug 2020 16:38:25 - Opening workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+              17 Aug 2020 16:38:26 - Loading file PlatformTypes_AR4.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+              17 Aug 2020 16:38:26 - Loading file ComM_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\ComM_swc.arxml).
+              17 Aug 2020 16:38:26 - Loading file Det_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\Det_swc.arxml).
+              17 Aug 2020 16:38:26 - Loading file EcuM_swc.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\ServiceComponents\EcuM_swc.arxml).
+              17 Aug 2020 16:38:27 - Loading file DataTypes.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\DataTypes.arxml).
+              17 Aug 2020 16:38:27 - Loading file LightControlGIT.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.arxml).
+              17 Aug 2020 16:38:27 - Loading file Packages.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\Packages.arxml).
+              17 Aug 2020 16:38:27 - Loading file PortInterfaces.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\PortInterfaces.arxml).
+              17 Aug 2020 16:38:27 - Opened workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.
+              17 Aug 2020 16:38:28 - Start import.
+              17 Aug 2020 16:38:28 - Importing file (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\System\SystemExtract.arxml).
+              17 Aug 2020 16:38:28 - Merging imported data.
+              17 Aug 2020 16:38:29 - Finished import.
+              17 Aug 2020 16:38:29 - Saving workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+              17 Aug 2020 16:38:29 - Saving file DataTypes.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\DataTypes.arxml).
+              17 Aug 2020 16:38:29 - Saving file LightControlGIT.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.arxml).
+              17 Aug 2020 16:38:29 - Saving file Packages.arxml (D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\Packages.arxml).
+              17 Aug 2020 16:38:29 - Saved workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.
+              17 Aug 2020 16:38:29 - Closing workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf'...
+              17 Aug 2020 16:38:29 - Closed workspace 'D:\TEMP\DaVinci\Cfg-4911627\Workflow\1597675047718-0\Config\Developer\LightControlGIT.dcf' successfully.
+              OK.
+ 16:38:32 - Action 'Update DaVinci Developer Workspace' successfully finished.
+ 16:38:32 - Action 'Update RTE configuration' started.
+ 16:38:33 - Action 'Update RTE configuration' successfully finished.
+ 16:38:33 - Action 'Align differences after successful update' started.
+ 16:38:34 - Action 'Align differences after successful update' successfully finished.
+ 16:38:34 - Action 'Clean up update data' started.
+ 16:38:34 - Action 'Clean up update data' successfully finished.
+16:38:41 - Workflow 'Update workflow.' successfully finished.
