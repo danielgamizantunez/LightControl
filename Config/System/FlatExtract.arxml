@@ -102,6 +102,10 @@
                                   <SHORT-NAME>EcuM</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="95609b04-f42c-41da-aa17-e11776399a05">
+                                  <SHORT-NAME>BswM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="b7ad668a-2ef8-4148-88b9-d6befd1b6306">
@@ -128,6 +132,7 @@
                                 <SDGS>
                                   <SDG GID="DV:CfgReferences">
                                     <SD GID="e600685b-46cf-4b6b-99c9-c8aacd59cd71">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="95609b04-f42c-41da-aa17-e11776399a05">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="b992d740-7419-44d0-b54c-b06aeb40e17c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
                                     <SD GID="d2cbca3e-38e8-4cf3-9cea-6fd37c46ea7c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="a2f7c3d5-8971-4afa-8eb5-1406141d05d0">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
@@ -140,6 +145,16 @@
                                     <SD GID="EE7FE38A-ABF7-4D49-B07D-EFCCBB7AEB6E">/ECUCompositionTypes/ECU_Composition</SD>
                                     <SD GID="83187d12-e337-4c94-ba31-83174ccc6153">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="76f8b939-f064-4ff3-9513-e8399616df91">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="bb351c84-6975-410e-8447-3a53c7915303">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="65f2543d-d0bf-4013-ba4a-3ef7cbb691a7">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="efb93325-4bf1-4f6a-b7cb-4bf3e70a64f4">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
+                                    <SD GID="260d9e87-b3ff-4798-a719-30cf091a2a8c">/MICROSAR/BswM_swc</SD>
+                                    <SD GID="1cb0e7ce-8164-4d0e-9bd2-b0845dca5bc1">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="5947ce29-edb5-4e8a-9b48-4edc8a81fc6b">/MICROSAR/BswM_swc/ComponentTypes</SD>
+                                    <SD GID="92af4cfe-a583-4e71-b5f0-279fb2451c7d">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
+                                    <SD GID="3182ec4b-396b-46cd-ac3f-13e8287f13e7">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
+                                    <SD GID="228b0bdd-a1c8-4273-a340-688551f23720">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="123fdb58-f4a3-4ca5-9e55-09e1316d3435">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
                                     <SD GID="7f69125e-d427-4cff-b92a-c15353106a95">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior</SD>
                                     <SD GID="a80d04db-76fc-451d-a0d1-3b347d20bcbf">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="44989992-494f-4893-8ee8-4b15757911f4">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_1</SD>
