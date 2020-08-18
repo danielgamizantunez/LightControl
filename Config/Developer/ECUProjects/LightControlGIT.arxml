@@ -2,11 +2,119 @@
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
+    <AR-PACKAGE UUID="485E9B1E-96C0-4C4F-9C15-36883DE7E8A5">
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM UUID="DA720646-4644-4AE7-871D-8A8D277D06B0">
+          <SHORT-NAME>System</SHORT-NAME>
+          <MAPPINGS>
+            <SYSTEM-MAPPING UUID="C15F75E4-4BEE-446C-A148-119541DB41A7">
+              <SHORT-NAME>System_MPPNG</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_LightSwitch/DE_LightSwitch</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/LightSwitch</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_HeadLight/DE_HeadLight</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/HeadLight</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="23278562-F558-43F9-A46E-0DADD0031B11">
+              <SHORT-NAME>EcuSwComposition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionTypes/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
     <AR-PACKAGE UUID="84D8B2B1-6CFC-43DB-B639-847DCF51CE77">
       <SHORT-NAME>ECUCompositionTypes</SHORT-NAME>
       <ELEMENTS>
         <COMPOSITION-SW-COMPONENT-TYPE UUID="EE7FE38A-ABF7-4D49-B07D-EFCCBB7AEB6E">
           <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="AA40C1B3-5BB1-4094-AA87-F2859A970F97">
+              <SHORT-NAME>Proto_HeadLight</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_HeadLight/DE_HeadLight</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Interface_HeadLight</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6C78AEE4-ADFB-406E-9DB0-155D5BF88631">
+              <SHORT-NAME>Proto_LightSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_LightSwitch/DE_LightSwitch</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Interface_LightSwitch</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="76F9D585-6F8F-4D87-8FA1-DFB346CF0720">
+              <SHORT-NAME>MySWC</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/MySWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR UUID="5020BC78-ECB4-45D4-99C8-B48276C70065">
+              <SHORT-NAME>MySWC_Interface_HeadLight_Interface_HeadLight</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MySWC</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MySWC/Proto_HeadLight</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Proto_HeadLight</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="E37A012A-CE2A-4CE2-B832-9720C8B29E58">
+              <SHORT-NAME>Proto_LightSwitch_MySWC_Proto_LightSwitch</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MySWC</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MySWC/Proto_LightSwitch</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Proto_LightSwitch</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>
     </AR-PACKAGE>
@@ -20,20 +128,6 @@
     </AR-PACKAGE>
     <AR-PACKAGE UUID="13B1FAD3-23B5-4B16-B69B-035DD6F41A44">
       <SHORT-NAME>Systems</SHORT-NAME>
-    </AR-PACKAGE>
-    <AR-PACKAGE UUID="485E9B1E-96C0-4C4F-9C15-36883DE7E8A5">
-      <SHORT-NAME>VehicleProject</SHORT-NAME>
-      <ELEMENTS>
-        <SYSTEM UUID="DA720646-4644-4AE7-871D-8A8D277D06B0">
-          <SHORT-NAME>System</SHORT-NAME>
-          <ROOT-SOFTWARE-COMPOSITIONS>
-            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="23278562-F558-43F9-A46E-0DADD0031B11">
-              <SHORT-NAME>EcuSwComposition</SHORT-NAME>
-              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionTypes/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
-            </ROOT-SW-COMPOSITION-PROTOTYPE>
-          </ROOT-SOFTWARE-COMPOSITIONS>
-        </SYSTEM>
-      </ELEMENTS>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>

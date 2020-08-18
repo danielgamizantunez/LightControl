@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <DCF ARSCHEMA="431_DEV">
 	<Version>1.0</Version>
 	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
@@ -15,5 +15,10 @@
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ECUProjects\LightControlGIT.arxml</ARXML>
+		<DVG>ECUProjects\LightControlGIT.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/MySWC.arxml</ARXML>
+		<DVG>ComponentTypes/MySWC.dvg</DVG>
 	</FILEREF>
 </DCF>

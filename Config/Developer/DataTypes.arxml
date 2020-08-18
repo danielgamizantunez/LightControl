@@ -351,6 +351,7 @@
           </ADMIN-DATA>
           <BASE-TYPE-SIZE>1</BASE-TYPE-SIZE>
           <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+          <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
         </SW-BASE-TYPE>
         <SW-BASE-TYPE UUID="1C53D3DA-96C8-43A8-B011-55506B8BC0A5">
           <SHORT-NAME>uint8</SHORT-NAME>
@@ -364,6 +365,7 @@
           </ADMIN-DATA>
           <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+          <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
         </SW-BASE-TYPE>
       </ELEMENTS>
       <AR-PACKAGES>
@@ -463,6 +465,59 @@
                 </COMPU-SCALES>
               </COMPU-INTERNAL-TO-PHYS>
             </COMPU-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="552A08A2-945C-4613-B9CC-61E05E95168E">
+      <SHORT-NAME>DataTypes</SHORT-NAME>
+      <ELEMENTS>
+        <IMPLEMENTATION-DATA-TYPE UUID="CDF78B07-BE1E-4FEA-99E5-132FBF482BD8">
+          <SHORT-NAME>DT_LightSwitch</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/uint8</BASE-TYPE-REF>
+                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/Semantics/CM_LightSwitch</COMPU-METHOD-REF>
+                <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/DataConstrs/uint_2_DataConstr</DATA-CONSTR-REF>
+                <INVALID-VALUE>
+                  <NUMERICAL-VALUE-SPECIFICATION>
+                    <VALUE>3</VALUE>
+                  </NUMERICAL-VALUE-SPECIFICATION>
+                </INVALID-VALUE>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="413453E9-EA1C-41AD-8002-A8537FD0E5C2">
+          <SHORT-NAME>DT_HeadLight</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/boolean</BASE-TYPE-REF>
+                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/Semantics/CM_HeadLight</COMPU-METHOD-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="40637F49-C989-4D59-93E6-1C04B3E196F0">
+          <SHORT-NAME>DataConstrs</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-CONSTR UUID="BB3282E1-21D4-45EA-9350-445ED3FBEDF9">
+              <SHORT-NAME>uint_2_DataConstr</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
           </ELEMENTS>
         </AR-PACKAGE>
       </AR-PACKAGES>
