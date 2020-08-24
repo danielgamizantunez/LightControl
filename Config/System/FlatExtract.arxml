@@ -89,6 +89,56 @@
                                   <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
                                 </ANNOTATION>
                               </ANNOTATIONS>
+                              <PORTS>
+                                <P-PORT-PROTOTYPE UUID="f78645cb-2143-4fa3-b2b2-f02dbe6b0ec9">
+                                  <SHORT-NAME>Proto_HeadLight</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDED-COM-SPECS>
+                                    <NONQUEUED-SENDER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_HeadLight/DE_HeadLight</DATA-ELEMENT-REF>
+                                    </NONQUEUED-SENDER-COM-SPEC>
+                                  </PROVIDED-COM-SPECS>
+                                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Interface_HeadLight</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="3936bb0e-e549-4bba-b554-8cc47adb517f">
+                                  <SHORT-NAME>Proto_LightSwitch</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Interface_LightSwitch/DE_LightSwitch</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Interface_LightSwitch</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                              </PORTS>
                               <COMPONENTS>
                                 <SW-COMPONENT-PROTOTYPE UUID="b992d740-7419-44d0-b54c-b06aeb40e17c">
                                   <SHORT-NAME>ComM</SHORT-NAME>
@@ -106,7 +156,67 @@
                                   <SHORT-NAME>BswM</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="42337f08-84a6-40cc-90a1-a560e98408ba">
+                                  <SHORT-NAME>MySWC</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/MySWC</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
+                              <CONNECTORS>
+                                <DELEGATION-SW-CONNECTOR UUID="4fe942a3-60c5-4bc6-aa77-b4f442c4a0ee">
+                                  <SHORT-NAME>MySWC_Interface_HeadLight_Interface_HeadLight</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MySWC</CONTEXT-COMPONENT-REF>
+                                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MySWC/Proto_HeadLight</TARGET-P-PORT-REF>
+                                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Proto_HeadLight</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="8f57b9f6-92e7-4952-bee3-49fe2fb7b8d4">
+                                  <SHORT-NAME>Proto_LightSwitch_MySWC_Proto_LightSwitch</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MySWC</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MySWC/Proto_LightSwitch</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Proto_LightSwitch</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                              </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="b7ad668a-2ef8-4148-88b9-d6befd1b6306">
                               <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
@@ -136,13 +246,22 @@
                                     <SD GID="b992d740-7419-44d0-b54c-b06aeb40e17c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
                                     <SD GID="d2cbca3e-38e8-4cf3-9cea-6fd37c46ea7c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="a2f7c3d5-8971-4afa-8eb5-1406141d05d0">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="42337f08-84a6-40cc-90a1-a560e98408ba">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MySWC</SD>
                                     <SD GID="7c5c22de-5d94-4060-9530-d824f87791c0">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="31a2bbd1-3bbc-4ebe-9d44-0f7b98d380db">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="f4c4013b-507f-4eee-afac-6640b7e3e516">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="4439A9D0-4841-4A2B-AF3A-E25ECC3B6210">/ComponentTypes/MySWC</SD>
+                                    <SD GID="56622B4A-9E1A-475E-8423-E13A0A159546">/ComponentTypes/MySWC/Proto_HeadLight</SD>
+                                    <SD GID="BB18E78A-0768-42CF-BD31-56BEF5AAAB11">/ComponentTypes/MySWC/Proto_LightSwitch</SD>
+                                    <SD GID="509FDB05-6CC7-4334-9842-E8297D6F722A">/ComponentTypes/MySWC_Implementation</SD>
                                     <SD GID="CB9EB748-192A-424F-8664-259C06F7F2A1">/DataType/Semantics/CM_HeadLight</SD>
                                     <SD GID="93F3FCB3-D1B8-457A-A98D-3965186960F7">/DataType/Semantics/CM_LightSwitch</SD>
                                     <SD GID="F5C5025C-3442-4E1A-8702-4FF36813025D">/DataType/boolean</SD>
                                     <SD GID="1C53D3DA-96C8-43A8-B011-55506B8BC0A5">/DataType/uint8</SD>
                                     <SD GID="EE7FE38A-ABF7-4D49-B07D-EFCCBB7AEB6E">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="76F9D585-6F8F-4D87-8FA1-DFB346CF0720">/ECUCompositionTypes/ECU_Composition/MySWC</SD>
+                                    <SD GID="AA40C1B3-5BB1-4094-AA87-F2859A970F97">/ECUCompositionTypes/ECU_Composition/Proto_HeadLight</SD>
+                                    <SD GID="6C78AEE4-ADFB-406E-9DB0-155D5BF88631">/ECUCompositionTypes/ECU_Composition/Proto_LightSwitch</SD>
                                     <SD GID="83187d12-e337-4c94-ba31-83174ccc6153">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="76f8b939-f064-4ff3-9513-e8399616df91">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="bb351c84-6975-410e-8447-3a53c7915303">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
@@ -352,6 +471,10 @@
                                     <SD GID="98bcc64c-9cb8-4885-9d22-ba854d807de9">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="5f333d3b-0277-4cc0-a14f-8604d0cd699b">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
                                     <SD GID="0a3a4ce5-4840-4393-b08e-f8271b928e19">/MICROSAR/SomeIpXf_ib_bswmd/BswModuleDescriptions/SomeIpXf/SomeIpXfBehavior</SD>
+                                    <SD GID="360C1365-5D80-4E5E-A0ED-3B883DCCF009">/PortInterfaces/Interface_HeadLight</SD>
+                                    <SD GID="44810F12-8BE2-4D27-AAE6-F041EA4BF1D6">/PortInterfaces/Interface_HeadLight/DE_HeadLight</SD>
+                                    <SD GID="45E1229A-E023-48F2-997F-D54C19F97C43">/PortInterfaces/Interface_LightSwitch</SD>
+                                    <SD GID="2BE4BCC5-71F7-4E93-AF6F-A73B0BCE2EDE">/PortInterfaces/Interface_LightSwitch/DE_LightSwitch</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
@@ -398,6 +521,7 @@
                                     <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="23278562-F558-43F9-A46E-0DADD0031B11">/VehicleProject/System/EcuSwComposition</SD>
                                   </SDG>
                                 </SDGS>
                               </ADMIN-DATA>

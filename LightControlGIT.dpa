@@ -598,5 +598,7 @@
         <AmdGenerateDebugData>false</AmdGenerateDebugData>
         <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
     </Miscellaneous>
-    <SwctGeneration/>
+    <SwctGeneration>
+        <Component Name="MySWC" GenerationEnabled="true"/>
+    </SwctGeneration>
 </ProjectAssistant>
